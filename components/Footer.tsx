@@ -17,9 +17,9 @@ const serviceLinks = [
 
 const socialLinks = [
   { Icon: Twitter, href: "https://twitter.com", label: "X (Twitter)" },
-  { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { Icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { Icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  { Icon: Linkedin, href: "https://www.linkedin.com/company/hrlabss/", label: "LinkedIn" },
+  { Icon: Facebook, href: "https://www.facebook.com/share/196zMZsVVU/", label: "Facebook" },
+  { Icon: Instagram, href: "https://www.instagram.com/hrlabsglobal?igsh=MWZ1c2hybzIxcXFqMA==", label: "Instagram" },
 ];
 
 export default function Footer() {
