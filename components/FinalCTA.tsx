@@ -37,7 +37,7 @@ export default function FinalCTA() {
         </motion.p>
 
         <motion.a
-          href="mailto:hsreeraj4@gmail.com"
+          href="mailto:hr@hrlabs.in"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.25 }}
