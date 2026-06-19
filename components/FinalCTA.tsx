@@ -55,20 +55,12 @@ export default function FinalCTA() {
           className="flex flex-wrap justify-center gap-4 mt-8"
         >
           <a
-            href="tel:+919916555890"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-pill border border-white/20 text-white/80 hover:text-white hover:border-white/40 font-inter text-sm transition-all"
-            aria-label="Call Bangalore office: +91 99165 55890"
-          >
-            <Phone size={14} aria-hidden="true" />
-            Bangalore: +91 99165 55890
-          </a>
-          <a
             href="tel:+919742194666"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-pill border border-white/20 text-white/80 hover:text-white hover:border-white/40 font-inter text-sm transition-all"
-            aria-label="Call Madurai office: +91 97421 94666"
+            aria-label="Call HR Labs: +91 97421 94666"
           >
             <Phone size={14} aria-hidden="true" />
-            Madurai: +91 97421 94666
+            +91 97421 94666
           </a>
         </motion.div>
       </div>

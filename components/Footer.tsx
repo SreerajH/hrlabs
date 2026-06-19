@@ -104,24 +104,12 @@ export default function Footer() {
               Contact
             </h3>
             <div className="flex flex-col gap-3 text-sm text-white/60">
-              <div>
-                <p className="text-white/80 font-medium mb-0.5">Bangalore</p>
-                <a
-                  href="tel:+919916555890"
-                  className="hover:text-white transition-colors"
-                >
-                  +91 99165 55890
-                </a>
-              </div>
-              <div>
-                <p className="text-white/80 font-medium mb-0.5">Madurai</p>
-                <a
-                  href="tel:+919742194666"
-                  className="hover:text-white transition-colors"
-                >
-                  +91 97421 94666
-                </a>
-              </div>
+              <a
+                href="tel:+919742194666"
+                className="hover:text-white transition-colors"
+              >
+                +91 97421 94666
+              </a>
               <div className="flex gap-3 mt-1">
                 <a href="#privacy" className="hover:text-white transition-colors">
                   Privacy Policy

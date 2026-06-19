@@ -154,7 +154,6 @@ export default function Hero() {
                 <div className="grid grid-cols-2 gap-3 w-full mt-4">
                   {[
                     { n: "18+", l: "Years" },
-                    { n: "6+", l: "States" },
                     { n: "90+", l: "Companies" },
                     { n: "320+", l: "Projects" },
                   ].map((s) => (
