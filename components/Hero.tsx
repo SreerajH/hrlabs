@@ -155,20 +155,21 @@ export default function Hero() {
                   {[
                     { n: "18+", l: "Years" },
                     { n: "90+", l: "Companies" },
-                    { n: "320+", l: "Projects" },
                   ].map((s) => (
                     <div
                       key={s.l}
                       className="bg-white/10 rounded-xl px-4 py-3 text-center backdrop-blur-sm border border-white/10"
                     >
-                      <p className="font-playfair text-white font-bold text-2xl">
-                        {s.n}
-                      </p>
-                      <p className="font-inter text-white/70 text-xs mt-0.5">
-                        {s.l}
-                      </p>
+                      <p className="font-playfair text-white font-bold text-2xl">{s.n}</p>
+                      <p className="font-inter text-white/70 text-xs mt-0.5">{s.l}</p>
                     </div>
                   ))}
+                  <div className="col-span-2 flex justify-center">
+                    <div className="bg-white/10 rounded-xl px-4 py-3 text-center backdrop-blur-sm border border-white/10 w-1/2">
+                      <p className="font-playfair text-white font-bold text-2xl">320+</p>
+                      <p className="font-inter text-white/70 text-xs mt-0.5">Projects</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
