@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -10,7 +11,7 @@ const navLinks = [
   { label: "What We Do", href: "#why" },
   { label: "Careers", href: "#careers" },
   { label: "Partners", href: "#ngo" },
-  { label: "DigiCloud", href: "#digicloud" },
+  { label: "DigiCloud", href: "/digicloud" },
 ];
 
 export default function Navbar() {
@@ -49,13 +50,23 @@ export default function Navbar() {
           <ul className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="relative font-inter font-medium text-[15px] text-navy hover:text-blue-mid transition-colors duration-200 group"
-                >
-                  {link.label}
-                  <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-blue-mid transition-all duration-300 group-hover:w-full" />
-                </a>
+                {link.href.startsWith("/") ? (
+                  <Link
+                    href={link.href}
+                    className="relative font-inter font-medium text-[15px] text-navy hover:text-blue-mid transition-colors duration-200 group"
+                  >
+                    {link.label}
+                    <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-blue-mid transition-all duration-300 group-hover:w-full" />
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    className="relative font-inter font-medium text-[15px] text-navy hover:text-blue-mid transition-colors duration-200 group"
+                  >
+                    {link.label}
+                    <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-blue-mid transition-all duration-300 group-hover:w-full" />
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -93,13 +104,23 @@ export default function Navbar() {
             <ul className="flex flex-col gap-6 mt-8">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="font-inter font-medium text-2xl text-white hover:text-gold transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  {link.href.startsWith("/") ? (
+                    <Link
+                      href={link.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="font-inter font-medium text-2xl text-white hover:text-gold transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="font-inter font-medium text-2xl text-white hover:text-gold transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
